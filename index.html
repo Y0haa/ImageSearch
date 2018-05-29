@@ -52,7 +52,7 @@ limitations under the License.
             <p>Select a file below. When it is uploaded, a link will be displayed to the uploaded file.</p>
             <h6>Choose File</h6>
             <input type="file" id="file" name="file"/>
-            <h6>File URL:</h6>
+            <h6>File Status:</h6>
             <span id="linkbox"></span>
           </div>
         </div>
@@ -108,7 +108,7 @@ limitations under the License.
         snapshot.ref.getDownloadURL().then(function(url) {
           console.log('File available at', url);
           // [START_EXCLUDE]
-          document.getElementById('linkbox').innerHTML = '<a href="' +  url + '">Press YES on the screen to continue</a>';
+          document.getElementById('linkbox').innerHTML =  '<p>Success!! </n> Press Yes on screen to Continue</p>';
           // [END_EXCLUDE]
         });
       }).catch(function(error) {
